@@ -1,9 +1,9 @@
-const axios = require('axios');
-const crypto = require("crypto");
+const axios = require('axios')
+const crypto = require("crypto")
 
-const buildEddsa = require("circomlibjs").buildEddsa;
-const buildBabyjub = require("circomlibjs").buildBabyjub;
-const buildPoseidon = require("circomlibjs").buildPoseidon;
+const buildEddsa = require("circomlibjs").buildEddsa
+const buildBabyjub = require("circomlibjs").buildBabyjub
+const buildPoseidon = require("circomlibjs").buildPoseidon
 
 async function doPostRequest() {
   eddsa = await buildEddsa()
@@ -26,15 +26,15 @@ async function doPostRequest() {
     pubkeyY: pubKey[1].toString(),
   });
 
-  let data = res.data;
-  console.log(data);
+  let data = res.data
+  console.log(data)
 }
 
-doPostRequest();
-doPostRequest();
-doPostRequest();
-doPostRequest();
-doPostRequest();
-doPostRequest();
-doPostRequest();
-doPostRequest();
+doPostRequest()
+doPostRequest()
+doPostRequest()
+doPostRequest()
+doPostRequest()
+doPostRequest()
+doPostRequest()
+doPostRequest()
